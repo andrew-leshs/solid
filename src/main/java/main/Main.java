@@ -1,6 +1,6 @@
 package main;
-
 import purchase.Purchase;
+import purchase.PurchaseActions;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -23,7 +23,7 @@ public class Main {
 
         System.out.println("Введите два слова: название товара и количество. Или end");
         Scanner scanner = new Scanner(System.in);
-        Purchase purchase = new Purchase();
+        PurchaseActions purchase = new PurchaseActions(new Purchase());
         while (true) {
             String line = scanner.nextLine();
             if ("end".equals(line)) break;
