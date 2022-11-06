@@ -4,14 +4,8 @@ import java.util.Map;
 
 public class PurchaseActions {
 
-    private Purchase purchase;
-
     private final int PRODUCTS_SIZE = 4;
-    protected Purchase[] purchases = new Purchase[PRODUCTS_SIZE];
-
-    public PurchaseActions(Purchase purchase) {
-        this.purchase = purchase;
-    }
+    protected Purchase[] purchases = new Purchase[PRODUCTS_SIZE]; // Список покупок
 
     public void addPurchase(String title, int count) {
         for (int i = 0; i < purchases.length; i++) {
